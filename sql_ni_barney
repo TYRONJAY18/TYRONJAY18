@@ -1,0 +1,2 @@
+SELECT employee_name, empolyee_salary * 0.12 AS Total_vat, empolyee_salary * (employee_sss / 100) AS sss, empolyee_salary * (employee_pagibig / 100) AS pagIbig, empolyee_salary * (employee_philhealth / 100) AS philhealth, (sss + pagibig + philhealth) AS toal_amount_of_vat, empolyee_salary - Total_vat - toal_amount_of_vat AS remaining_balance, remaining_balance * 0.35 AS to_wife, (remaining_balance - to_wife) * 0.25 AS scatter, remaining_balance - (to_wife + scatter) AS balance_total
+FROM Table1;
